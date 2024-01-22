@@ -1,0 +1,77 @@
+h1 {
+    text-align: center;
+}
+
+h3 {
+    font-weight: 500;
+}
+
+li {
+    font-weight: 300;
+}
+
+.float-container {
+    padding: 20px;
+    border: 3px solid #fff;
+}
+
+.banana {
+    float: left;
+    width: 45%;
+    padding: 10px;
+    border: 1px solid red;
+    border-radius: 15px;
+}
+
+ol {
+    padding: 10px;
+    list-style-position: inside;
+}
+
+.chocolate {
+    float: right;
+    width: 45%;
+    padding: 10px;
+    border: 1px dashed red;
+    border-radius: 15px;
+}
+
+ul {
+    padding: 10px;
+    list-style-position: inside;
+    list-style-type: upper-roman;
+}
+
+.apple {
+    width: 100%;
+    margin-top: 60%;
+}
+
+.bravo {
+    float: right;
+    margin-bottom: 20px;
+}
+
+/* unvisited link */
+a:link {
+    color: #ca3433;
+    text-decoration: none;
+  }
+  
+/* visited link */
+a:visited {
+    color: blue;
+    text-decoration: none;
+}
+  
+/* mouse over link */
+a:hover {
+    color: hotpink;
+    text-decoration: none;
+}
+  
+/* selected link */
+a:active {
+    color: purple;
+    text-decoration: none;
+}
