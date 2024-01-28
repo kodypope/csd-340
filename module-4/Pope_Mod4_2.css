@@ -29,7 +29,9 @@ figcaption {
 }
 
 img {
-    size: 40%;
+    width: 400px;
+    height: 600px;
+    object-fit: cover;
 }
 
 .image1 {
@@ -37,6 +39,7 @@ img {
     grid-column-end: 1;
     grid-row-start: 1;
     grid-row-end: 1;
+    border-right: 1px solid red;
 }
 
 .image2 {
@@ -44,6 +47,7 @@ img {
     grid-column-end: 2;
     grid-row-start: 1;
     grid-row-end: 1;
+    border-right: 1px solid red;
 }
 
 .image3 {
