@@ -1,0 +1,90 @@
+header {
+    background-color: tomato;
+    text-decoration-color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    font-weight: 400;
+}
+
+#navbar {
+    overflow: hidden;
+    background-color: aqua;
+    border-bottom: solid 15px green;
+}
+
+#navbar a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+#navbar a:hover {
+    background-color: #ca3433;
+    color: blueviolet;
+}
+
+#container {
+    margin-top: 2%;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding: 10px;
+}
+
+.card {
+
+}
+
+.car-title {
+
+}
+
+.card-content {
+
+}
+
+footer {
+
+}
+
+footer p {
+
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* unvisited link */
+a:link {
+    color: #ca3433;
+    text-decoration: none;
+  }
+  
+/* visited link */
+a:visited {
+    color: blue;
+    text-decoration: none;
+}
+  
+/* mouse over link */
+a:hover {
+    color: hotpink;
+    text-decoration: none;
+}
+  
+/* selected link */
+a:active {
+    color: purple;
+    text-decoration: none;
+}
