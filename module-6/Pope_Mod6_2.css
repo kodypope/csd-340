@@ -1,6 +1,6 @@
 header {
-    background-color: tomato;
-    text-decoration-color: white;
+    background-color: olive;
+    color: white;
     padding: 20px;
     text-align: center;
 }
@@ -11,7 +11,7 @@ h1 {
 
 #navbar {
     overflow: hidden;
-    background-color: aqua;
+    background-color: olive;
     border-bottom: solid 15px green;
 }
 
@@ -26,7 +26,7 @@ h1 {
 
 #navbar a:hover {
     background-color: #ca3433;
-    color: blueviolet;
+    color: black;
 }
 
 #container {
@@ -37,23 +37,43 @@ h1 {
 }
 
 .card {
-
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    width: 50%;
 }
 
-.car-title {
-
+.card-title {
+    text-align: center;
+    font-size: 2em;
+    color: tomato;
+    font-weight: 400;
 }
 
 .card-content {
+    padding: 2px 16px;
+}
 
+.card-content a:hover {
+    color: hotpink;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16x 0 rgba(0, 0, 0, 0.2);
 }
 
 footer {
-
+    background-color: olive;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
 }
 
 footer p {
-
+    color: white;
+    font-weight: 400;
+    float: right;
+    padding-right: 10px;
+    font-style: italic;
 }
 
 footer a {
@@ -63,23 +83,18 @@ footer a {
 
 footer a:hover {
     text-decoration: underline;
+    color: blue;
 }
 
 /* unvisited link */
-a:link {
-    color: #ca3433;
+.card:link {
+    color: blue;
     text-decoration: none;
   }
   
 /* visited link */
 a:visited {
-    color: blue;
-    text-decoration: none;
-}
-  
-/* mouse over link */
-a:hover {
-    color: hotpink;
+    color: red;
     text-decoration: none;
 }
   
