@@ -66,13 +66,17 @@ h1 {
     margin-bottom: 30px;
 }
 
-.movies th {
+#movies th {
+    border: 1px solid #ddd;
+    background-color: olive;
+    color: white;
     padding-top: 12px;
     padding-bottom: 12px;
+    padding-left: 8px;
     text-align: left;
 }
 
-.movies td {
+#movies td {
     border: 1px solid #ddd;
     padding: 8px;
 }
@@ -105,13 +109,17 @@ footer a:hover {
 
 /* unvisited link */
 .card:link {
-    color: blue;
+    color: red;
     text-decoration: none;
   }
+
+.card a:link {
+    color: red;
+}
   
 /* visited link */
 a:visited {
-    color: red;
+    color: blue;
     text-decoration: none;
 }
   
