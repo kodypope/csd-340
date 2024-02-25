@@ -1,0 +1,92 @@
+h1 {
+    text-align: center;
+}
+
+.float-container {
+    padding: 20px;
+    border: 3px solid #fff;
+}
+
+#image-gallery {
+    border: 1px solid red;
+    border-radius: 15px;
+    display: grid;
+    display: inline-grid;
+    margin-top: 10%;
+}
+
+h3 {
+    text-align: center;
+}
+
+figure {
+    text-align: center;
+}
+
+figcaption {
+    font-style: italic;
+    font-size: .75em;
+}
+
+img {
+    width: 400px;
+    height: 600px;
+    object-fit: cover;
+}
+
+.image1 {
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 1;
+    grid-row-end: 1;
+    border-right: 1px solid red;
+}
+
+.image2 {
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 1;
+    border-right: 1px solid red;
+}
+
+.image3 {
+    grid-column-start: 3;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 1;
+}
+
+.apple {
+    width: 100%;
+    margin-top: 60%;
+}
+
+.bravo {
+    float: right;
+    margin-bottom: 20px;
+}
+
+/* unvisited link */
+a:link {
+    color: #ca3433;
+    text-decoration: none;
+  }
+  
+/* visited link */
+a:visited {
+    color: blue;
+    text-decoration: none;
+}
+  
+/* mouse over link */
+a:hover {
+    color: hotpink;
+    text-decoration: none;
+}
+  
+/* selected link */
+a:active {
+    color: purple;
+    text-decoration: none;
+}

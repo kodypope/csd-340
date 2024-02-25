@@ -1,0 +1,79 @@
+<!-- Kody Pope 2-23-24 - Assignment 3.2 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="description" content="Learning HTMl and CSS">
+    <meta name="keywords" content="HTML, CSS">
+    <meta name="author" content="Kody Pope">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSD 340 Web Development with HTML and CSS</title>
+    <script>
+        function displayImage(imageFile){
+          var largerImage = document.getElementById("mainImage");
+          var newNode = document.createElement("img");
+          newNode.id = "mainImage";
+          newNode.src = imageFile;
+          newNode.alt = "Large Image";
+          newNode.className = "mainImage";
+          newNode.style.width = "300px";
+          newNode.style.height = "200px";
+          largerImage.parentNode.replaceChild(newNode, largerImage);
+        }
+      </script>
+    <link rel="stylesheet" href="../site.css" type="text/css">
+</head>
+
+<body>
+  <div id="container">
+    <h1>Assignment 10.3: JavaScript - Part 2</h1>
+    <h2>CSD 340 Web Development with HTML and CSS</h2>
+    <br>
+    <div>
+      <a href=#
+        onmouseover="pups.src='pups_01.jpg';"
+        onmouseout= "pups.src='pups_02.jpg';"
+        onclick="window.open(pups.src)"
+        >
+        <img border = 0 id = "pups" src = "pups_02.jpg" alt="three puppies">
+      </a>
+    </div>
+    <br>
+    <div
+      onmouseover="this.style.color='red';"
+      onmouseout= "this.style.color='black';"
+      >
+      Run your mouse over the image to see the unfiltered image.
+    </div>
+    <br>
+    <div>
+      <a href=#
+        onmouseover="cat.src='cat_01.jpg';"
+        onmouseout= "cat.src='cat_02.jpg';"
+        onclick="window.open(cat.src)"
+        >
+        <img border = 0 id = "cat" src = "cat_02.jpg" alt="cat">
+      </a>
+    </div>
+    <br>
+    <div
+      onmouseover="this.style.color='red';"
+      onmouseout= "this.style.color='black';"
+      >
+      <br>
+      Click the image to open the unfiltered image in a new tab.
+      <br>
+      <br>
+      You can also change the text to red while the mouse hovers over it.
+    </div>
+    <br>
+    <br>
+    <br>
+    <div class="bravo">
+      <a href="../../csd-340/index.html">
+        back to Landing Page
+      </a>
+    </div>
+  </div>
+</body>
+
+</html>
