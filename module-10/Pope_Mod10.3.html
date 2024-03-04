@@ -8,16 +8,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CSD 340 Web Development with HTML and CSS</title>
     <script>
-        function displayImage(imageFile){
-          var largerImage = document.getElementById("mainImage");
-          var newNode = document.createElement("img");
-          newNode.id = "mainImage";
-          newNode.src = imageFile;
-          newNode.alt = "Large Image";
-          newNode.className = "mainImage";
-          newNode.style.width = "300px";
-          newNode.style.height = "200px";
-          largerImage.parentNode.replaceChild(newNode, largerImage);
+        let data = ["Ram", "Shyam", "Sita", "Gita"];
+        let list = document.getElementById("myList");
+        for (i = 0; i < data.length; ++i) {
+            let li = document.createElement('li');
+            li.innerText = data[i];
+            list.appendChild(li);
         }
       </script>
     <link rel="stylesheet" href="../site.css" type="text/css">
