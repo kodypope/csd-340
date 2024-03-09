@@ -1,0 +1,90 @@
+<!-- Kody Pope 1-21-24 - Assignment 3.3 -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="description" content="Learning HTMl and CSS" />
+    <meta name="keywords" content="HTML, CSS" />
+    <meta name="author" content="Kody Pope" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSD 340 Web Development with HTML and CSS</title>
+    <link rel="stylesheet" href="../module-3/Pope_Mod3_3.css" type="text/css" />
+  </head>
+
+  <body>
+    <div id="container">
+      <h1>Assignment 12.2: JavaScript - Part 4</h1>
+      <div class="float-container">
+        <div class="banana">
+          <h3>Top 10 Favorite Books</h3>
+          <div>
+            <div>
+              <button onclick="displayTopToBottom()">Top to Bottom</button>
+              <button onclick="displayBottomToTop()">Bottom to Top</button>
+            </div>
+            <div id="sortedArray"></div>
+
+            <script>
+              // Array of top ten books
+              var topTenBooks = [
+                "Loser",
+                "The Giver",
+                "The Hunger Games",
+                "MockingJay",
+                "Catching Fire",
+                "The Ballad of Songbirds and Snakes",
+                "Harry Potter and the Philosopher's Stone",
+                "Lord of the Flies",
+                "Harry Potter and the Half-Blood Prince",
+                "Harry Potter and the Goblet of Fire",
+              ];
+
+              // Function to display array elements in ascending order
+              function displayTopToBottom() {
+                var e = "<hr/>";
+                // Sort the array in ascending order
+                var sortedArray = topTenBooks.slice().sort();
+                for (book in sortedArray) {
+                  sortedArray[book] =
+                    parseInt(book) + 1 + ". " + sortedArray[book] + "<br/>";
+                }
+                // Display the sorted array elements
+                // alert(sortedArray.join("\n"));
+                document.getElementById("sortedArray").innerHTML =
+                  e + sortedArray.join("");
+              }
+
+              // Function to display array elements in descending order
+              function displayBottomToTop() {
+                var e = "<hr/>";
+                // Sort the array in descending order
+                var sortedArray = topTenBooks.slice().sort().reverse();
+                for (book in sortedArray) {
+                  sortedArray[book] =
+                    parseInt(book) + 1 + ". " + sortedArray[book] + "<br/>";
+                }
+                // Display the sorted array elements
+                // alert(sortedArray.join("\n"));
+                document.getElementById("sortedArray").innerHTML =
+                  e + sortedArray.join("");
+              }
+            </script>
+          </div>
+        </div>
+        <div class="chocolate">
+          <h3>5 Things I've Learned Since the Course Started</h3>
+          <ul>
+            <li>HTML Structure</li>
+            <li>Using CSS</li>
+            <li>Linking CSS to HTML</li>
+            <li>Unordered Lists</li>
+            <li>Ordered Lists</li>
+          </ul>
+        </div>
+        <div class="apple"></div>
+        <div class="bravo">
+          <a href="../index.html">back to Landing Page</a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

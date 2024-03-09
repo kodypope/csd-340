@@ -1,65 +1,77 @@
 <!-- Kody Pope 2-28-24 - Assignment 11.2 -->
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta name="description" content="Learning HTMl and CSS">
-    <meta name="keywords" content="HTML, CSS">
-    <meta name="author" content="Kody Pope">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta name="description" content="Learning HTMl and CSS" />
+    <meta name="keywords" content="HTML, CSS" />
+    <meta name="author" content="Kody Pope" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CSD 340 Web Development with HTML and CSS</title>
     <script>
       var x = 0;
       var array = Array();
-      function add_element_to_array(){
+      function add_element_to_array() {
         array.push(document.getElementById("text1").value);
         alert("Item: " + array[x] + " Added at index " + x);
         x++;
         document.getElementById("text1").value = "";
       }
-      function display_array(){
-        var e = "<hr/>";   
-        for (var y=0; y<array.length; y++){
+      function display_array() {
+        var e = "<hr/>";
+        for (var y = 0; y < array.length; y++) {
           e += "Item " + (y + 1) + " = " + array[y] + "<br/>";
         }
         document.getElementById("Result").innerHTML = e;
       }
-      function removedElement(){
+      function removedElement() {
         array.pop();
         x--;
       }
     </script>
-    <link rel="stylesheet" href="../site.css" type="text/css">
-</head>
+    <link rel="stylesheet" href="../site.css" type="text/css" />
+  </head>
 
-<body>
-  <div id="container">
-    <h1>Assignment 11.2: JavaScript - Part 3</h1>
-    <h2>CSD 340 Web Development with HTML and CSS</h2>
-    <br>
-    <div>
-      <p>This is a To Do List. Please type your first item in the text 
-        box. After, click the Add button. To see your list, click the
-        Display button. If you wish to remove the last item on the 
-        list, click the Delete Last Entry button. Click Display to see 
-        the updated list.
-      </p>
-      <form action="/action_page.php">
-        <input type="text" id="text1">
-        <input type="button" id="button1" value="Add" onclick="add_element_to_array();">
-        <input type="button" id="button3" value="Delete Last Entry" onclick="removedElement()">
-        <input type="button" id="button2" value="Display" onclick="display_array();">
-        <div id="Result"></div> 
-      </form>
+  <body>
+    <div id="container">
+      <h1>Assignment 11.2: JavaScript - Part 3</h1>
+      <h2>CSD 340 Web Development with HTML and CSS</h2>
+      <br />
+      <div>
+        <p>
+          This is a To Do List. Please type your first item in the text box.
+          After, click the Add button. To see your list, click the Display
+          button. If you wish to remove the last item on the list, click the
+          Delete Last Entry button. Click Display to see the updated list.
+        </p>
+        <form action="/action_page.php">
+          <input type="text" id="text1" />
+          <input
+            type="button"
+            id="button1"
+            value="Add"
+            onclick="add_element_to_array();"
+          />
+          <input
+            type="button"
+            id="button3"
+            value="Delete Last Entry"
+            onclick="removedElement()"
+          />
+          <input
+            type="button"
+            id="button2"
+            value="Display"
+            onclick="display_array();"
+          />
+          <div id="Result"></div>
+        </form>
+      </div>
+      <br />
+      <br />
+      <br />
+      <div class="bravo">
+        <a href="../../csd-340/index.html"> back to Landing Page </a>
+      </div>
     </div>
-    <br>
-    <br>
-    <br>
-    <div class="bravo">
-      <a href="../../csd-340/index.html">
-        back to Landing Page
-      </a>
-    </div>
-  </div>
-</body>
-
+  </body>
 </html>
